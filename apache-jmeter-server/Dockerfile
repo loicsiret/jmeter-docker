@@ -1,6 +1,6 @@
 #This Dockerfile builds Apache JMeter Master Executable based on ajeetraina/apache-jmeter-base
 
-FROM ajeetraina/apache-jmeter-base
+FROM loicsiret/apache-jmeter-base
 LABEL Description="This image is used to start the Apache JMeter Server Executable" Vendor="Collabnix" Version="1.0"
 
 # Ports required for JMeter Slaves/Server

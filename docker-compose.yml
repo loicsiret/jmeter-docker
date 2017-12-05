@@ -1,7 +1,7 @@
-version: "3.3"
+version: "3.1"
 services:
   master:
-    image: ajeetraina/apache-jmeter-master
+    image: loicsiret/apache-jmeter-master
     tty: true
     ports:
       - "60000"
@@ -17,7 +17,7 @@ services:
       placement:
           constraints: [node.role == manager]
   slave:
-    image: ajeetraina/apache-jmeter-server
+    image: loicsiret/apache-jmeter-server
     tty: true
     networks:
       - jm-network
